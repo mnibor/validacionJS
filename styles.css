@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: darkkhaki;
+    min-height: 50vh;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.formulario {
+    width: 400px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 221, 176);
+    overflow: hidden;
+}
+
+.formulario__titulo {
+    background-color: blueviolet;
+    color: aliceblue;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.formulario__form {
+    padding: 30px 20px;
+}
+
+.form-control {
+    margin-bottom: 7px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    margin-bottom: 7px;
+    display: inline-block;
+    font-weight: bolder;
+}
+
+.form-control input {
+    border: none;
+    background-color: white;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.form-control input:focus {
+    border: none;
+}
+
+.form-control-error input {
+    background-color: rgb(255, 191, 191);
+    border: 1px solid red;
+}
+
+.form-control-msj-view {
+    color: red;
+    display: block;
+    position: absolute;
+    font-weight: 500;
+    text-align: right;
+}
+
+.form-control-ok input{
+    background-color: rgb(148, 253, 148);
+    border: 1px solid green;
+}
+
+.formulario__boton {
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 4px;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+
+.formulario__boton:hover {
+    background-color: rgb(56, 56, 255);
+}
+
+.form-control-msj {
+    display: none;
+}
